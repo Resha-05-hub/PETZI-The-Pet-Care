@@ -22,7 +22,7 @@ const vetVisitRoutes = require("./routes/vetVisitRoutes");
 const notificationRoutes = require("./routes/notificationRoutes");
 const reminderScheduler = require("./services/reminderScheduler");
 const app = express();
-const PORT = 5500;
+const PORT = process.env.PORT || 5500;
 
 // Enable CORS and JSON parser
 app.use(cors());
